@@ -1,4 +1,4 @@
-# website
-My website uwu
+# website ᗜˬᗜ
+My website ᗜˬᗜ
 
-[fumofumo.dev](https://fumofumo.dev/)
+[fumofumo.dev](https://fumofumo.dev/) ᗜˬᗜ
