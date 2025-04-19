@@ -62,14 +62,60 @@
     @media (min-width: 768px) {
       .profile-section {
         flex-direction: row;
-        justify-content: center;
+        align-items: stretch;
+        justify-content: flex-start;
       }
     }
     
-    .images {
+    .profile-left {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+    }
+    
+    .profile-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      height: 100%;
+    }
+    
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 250px;
+    }
+    
+    .profile-images {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .fumo-collection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+      flex-grow: 1;
+    }
+    
+    .fumo-collection .image-container {
+      padding: 0.5rem;
+    }
+    
+    .fumo-collection img {
+      max-width: 100px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    /* Fix for thinner images to maintain consistent width */
+    img[src="reimufumo.png"],
+    img[src="yuyukofumo.png"] {
+      min-width: 100px;
+      object-fit: contain;
     }
     
     .image-container {
@@ -98,6 +144,9 @@
       border-radius: 12px;
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
       flex: 1;
+      max-height: 250px;
+      overflow-y: auto;
+      flex-shrink: 0;
     }
     
     .about-me p {
@@ -248,29 +297,35 @@
     
     <main>
       <div class="profile-section">
-        <div class="images">
+        <div class="profile-left">
           <div class="image-container">
-               <img src="fsf.png" alt="FSF">
+            <img src="fsf.png" alt="FSF">
           </div>
           <div class="image-container">
             <img src="fumo_image.jpg" alt="PFP">
           </div>
         </div>
         
-        <div class="about-me">
-          <p>FumoFumoEnjoyer identifies as:</p>
-          <ul>
-            <li>Argentinian</li>
-            <li>Professional Dumbass</li>
-            <li>Self Taught Retard</li>
-            <li>Visual Novel Addict</li>
-            <li>Wannabe Rust developer</li>
-            <li>Computer science student</li>
-            <li>Free and Open Source Software Advocate</li>
-            <li>Privacy Rights Activist</li>
-            <li>Anime and Videogames Enjoyer</li>
-          </ul>
-          <p class="spanish">(Tambien hablo español)</p>
+        <div class="profile-right">
+          <div class="about-me">
+            <p>FumoFumoEnjoyer is an Argentinian computer science student, free software advocate and privacy rights activist, currently learning rust for fullstack application, embedded and kernel development</p>
+            <p class="spanish">(Tambien hablo español)</p>
+          </div>
+          
+          <div class="fumo-collection">
+            <div class="image-container">
+              <img src="cirnofumo.png" alt="Cirno Fumo">
+            </div>
+            <div class="image-container">
+              <img src="reimufumo.png" alt="Reimu Fumo">
+            </div>
+            <div class="image-container">
+              <img src="reisenfumo.png" alt="Reisen Fumo">
+            </div>
+            <div class="image-container">
+              <img src="yuyukofumo.png" alt="Yuyuko Fumo">
+            </div>
+          </div>
         </div>
       </div>
       
