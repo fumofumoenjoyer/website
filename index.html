@@ -19,9 +19,18 @@
             color: var(--fg);
             font-family: system-ui, -apple-system, sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
             max-width: 650px;
             margin: 0 auto;
             padding: 2rem 1rem;
+            flex: 1;
         }
 
         header {
@@ -85,61 +94,231 @@
             border: 1px solid #333;
         }
 
-        footer {
-            margin-top: 3rem;
-            text-align: center;
+        .site-footer {
+            background-color: #1a1a1a;
+            border-top: 1px solid #333;
+            padding: 4rem 2rem 2rem;
+            margin-top: 4rem;
             font-size: 0.9rem;
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .footer-brand {
+            flex: 1 1 250px;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin: 0 0 0.5rem 0;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-weight: bold;
+        }
+
+        .footer-tagline {
+            color: var(--link);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #333;
+            border-radius: 4px;
+            color: var(--fg);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .footer-socials a:hover {
+            background-color: var(--accent);
+            color: var(--bg);
+        }
+
+        .footer-address {
             color: #888;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .footer-address p {
+            margin: 0;
+        }
+
+        .footer-nav {
+            flex: 2 1 500px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1 1 120px;
+        }
+
+        .footer-column h3 {
+            color: var(--fg);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-column a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--link);
+        }
+
+        .footer-bottom {
+            max-width: 1000px;
+            margin: 3rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #888;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <img src="fumo_small.webp" alt="FumoFumoEnjoyer Profile Picture" class="profile-img">
-        <h1>FumoFumoEnjoyer</h1>
-        <p class="subtitle">Sysadmin | CS Student | Privacy Advocate</p>
-    </header>
+    <div class="container">
+        <header>
+            <img src="fumo_small.webp" alt="FumoFumoEnjoyer Profile Picture" class="profile-img">
+            <h1>FumoFumoEnjoyer</h1>
+            <p class="subtitle">Sysadmin | CS Student | Privacy Advocate | Fumo Enjoyer</p>
+        </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm an <strong>Argentinian Sysadmin</strong> and <strong>Computer Science student</strong>.
-                I prefer using Free and Open Source Software and technology that respects user privacy rights.
-            </p>
-            <p>
-                You can contact me through email or discord, for gaming or tech support or just to chat (links below)
-            </p>
-        </section>
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm an <strong>Argentinian Sysadmin</strong> and <strong>Computer Science student</strong>.
+                    I prefer using Free and Open Source Software and technology that respects user privacy rights.
+                </p>
+            </section>
 
-        <section>
-            <h2>Tech Stack</h2>
-            <p>Here are the technologies I work with most frequently:</p>
-            <ul class="tech-stack">
-                <li>Linux</li>
-                <li>Podman</li>
-                <li>Ansible</li>
-                <li>Nix / Flakes</li>
+            <section>
+                <h2>Tech Stack</h2>
+                <p>Here are the technologies I work with most frequently:</p>
+                <ul class="tech-stack">
+                    <li>Linux</li>
+                    <li>Podman</li>
+                    <li>Ansible</li>
+                    <li>Nix / Flakes</li>
 
-            </ul>
-        </section>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Contact & Links</h2>
-            <ul>
-                <li>Email: <a href="mailto:FumoFumoEnjoyer@fumofumo.dev">FumoFumoEnjoyer@fumofumo.dev</a></li>
-                <li>GitHub: <a href="https://github.com/fumofumoenjoyer">@fumofumoenjoyer</a></li>
-                <li>Discord: <a href="https://discord.gg/uhkPxkHA">@fumofumoenjoyer_</a></li>
-                <li>Steam: <a href="https://steamcommunity.com/id/fumofumoenjoyer">@fumofumoenjoyer</a></li>
-                <li>Youtube: <a href="https://www.youtube.com/@FumoFumoEnjoyer">@FumoFumoEnjoyer</a></li>
-            </ul>
-        </section>
-    </main>
+        </main>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 FumoFumoEnjoyer. Built with ᗜˬᗜ</p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">FumoFumoEnjoyer</div>
+                <p class="footer-tagline">Enjoying FumoFumo</p>
+                <div class="footer-socials">
+                    <a href="https://x.com/FumoFumoEnjoyer" title="X">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/fumofumoenjoyer" title="GitHub">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://steamcommunity.com/id/fumofumoenjoyer" title="Steam">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path
+                                d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@FumoFumoEnjoyer" title="YouTube">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-address">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Tech Stack</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Privacy</h3>
+                    <ul>
+                        <li><a
+                                href="http://fumofumo.i2p/?i2paddresshelper=K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfpgfgxaihryRpZwO2k4UqXNqZW7xHbhWjCHAtjtb5l0QBQAEAAcAAA==">I2P
+                                Hidden Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:FumoFumoEnjoyer@fumofumo.dev">Email</a></li>
+                        <li><a href="https://x.com/FumoFumoEnjoyer">X</a></li>
+                        <li><a href="https://github.com/fumofumoenjoyer">GitHub</a></li>
+                        <li><a href="https://steamcommunity.com/id/fumofumoenjoyer">Steam</a></li>
+                        <li><a href="https://www.youtube.com/@FumoFumoEnjoyer">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FumoFumoEnjoyer. Built with ᗜˬᗜ</p>
+        </div>
     </footer>
 
 </body>
