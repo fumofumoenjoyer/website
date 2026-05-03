@@ -1,2 +1,5 @@
 # website
 my website
+
+https://fumofumo.dev
+[http://fumofumo.i2p](http://fumofumo.i2p/?i2paddresshelper=K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfpgfgxaihryRpZwO2k4UqXNqZW7xHbhWjCHAtjtb5l0QBQAEAAcAAA==)
