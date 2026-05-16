@@ -1,5 +1,5 @@
 {
-  description = "FumoFumoEnjoyer's Personal Website Dev Flake";
+  description = "Fumoctl's Personal Website Dev Flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -20,7 +20,7 @@
           ];
 
           shellHook = ''
-            echo "ᗜˬᗜ Welcome to the FumoFumoEnjoyer website dev shell ᗜˬᗜ"
+            echo "ᗜˬᗜ Welcome to the Fumoctl website dev shell ᗜˬᗜ"
             echo "You can preview the site by running: darkhttpd . --port 8080"
           '';
         };
