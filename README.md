@@ -1,6 +1,6 @@
 # website
 my website
 
-https://fumofumo.dev
+https://fumoctl.com
 
-[http://fumofumo.i2p](http://fumofumo.i2p/?i2paddresshelper=K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfiv4mg69dRlL5v3SzWAqT-mDCIzMuLs8OWodRhBqKdN-K~iaDr11GUvm~dLNYCpP6YMIjMy4uzw5ah1GEGop034r-JoOvXUZS-b90s1gKk~pgwiMzLi7PDlqHUYQainTfpgfgxaihryRpZwO2k4UqXNqZW7xHbhWjCHAtjtb5l0QBQAEAAcAAA==)
+[http://fumoctl.i2p](http://fumoctl.i2p/?i2paddresshelper=cfXKh4S5RVLFPt~i1B1PuHm6n2dPugIT6hbT-HISsMBx9cqHhLlFUsU-3-LUHU-4ebqfZ0-6AhPqFtP4chKwwHH1yoeEuUVSxT7f4tQdT7h5up9nT7oCE-oW0~hyErDAcfXKh4S5RVLFPt~i1B1PuHm6n2dPugIT6hbT-HISsMBx9cqHhLlFUsU-3-LUHU-4ebqfZ0-6AhPqFtP4chKwwHH1yoeEuUVSxT7f4tQdT7h5up9nT7oCE-oW0~hyErDAcfXKh4S5RVLFPt~i1B1PuHm6n2dPugIT6hbT-HISsMBx9cqHhLlFUsU-3-LUHU-4ebqfZ0-6AhPqFtP4chKwwHH1yoeEuUVSxT7f4tQdT7h5up9nT7oCE-oW0~hyErDAcfXKh4S5RVLFPt~i1B1PuHm6n2dPugIT6hbT-HISsMBx9cqHhLlFUsU-3-LUHU-4ebqfZ0-6AhPqFtP4chKwwMptTKXQpz6JZ1iCnchVnXoQv9xkIMX8oqXWQHFoHnYgBQAEAAcAAA==)
